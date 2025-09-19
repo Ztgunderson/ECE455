@@ -6,4 +6,5 @@
 #SBATCH --output=parallel_sum.output
 
 cd $SLURM_SUBMIT_DIR
-g ++ -O2 -std=c++17 parallel_sum.cpp -o parallel_sum -pthread ./parallel_sum
+g++ -O2 -std=c++17 parallel_sum.cpp -o parallel_sum -pthread 
+./parallel_sum

@@ -6,4 +6,5 @@
 #SBATCH --output=producer_consumer.output
 
 cd $SLURM_SUBMIT_DIR
-g++ -O2 -std=c++17 producer_consumer. cpp  -o producer_consumer -pthread ./producer_consumer
+g++ -O2 -std=c++17 producer_consumer.cpp  -o producer_consumer -pthread 
+./producer_consumer

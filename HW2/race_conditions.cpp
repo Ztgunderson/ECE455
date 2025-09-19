@@ -16,7 +16,7 @@ then fix using:
 Compare results and timing
 */
 
-constexpr int ITER = 100'000;
+constexpr int ITER = 100'000'000;
 
 void inc_no_lock(int &counter)
 {
