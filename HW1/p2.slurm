@@ -3,6 +3,8 @@
 #SBATCH --time=00:01:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --output=hello.output
+#SBATCH --output=compile_run.output
 cd $SLURM_SUBMIT_DIR
-echo "Hello from node $(hostname)"
+module load gcc/13.2.0
+g++ main.cpp -o main
+./main
