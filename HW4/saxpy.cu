@@ -2,7 +2,7 @@
 #include <cuda_runtime.h>
 #include <stdlib.h> // Added for malloc/free
 
-__global void saxpy(int n, float a, float *x, float *y)
+__global__ void saxpy(int n, float a, float *x, float *y)
 {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i < n)

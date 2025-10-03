@@ -2,7 +2,7 @@
 #include <cuda_runtime.h>
 #include <stdlib.h> // Added for malloc/free
 
-__global void vector_add(const float *A, const float *B, float *C, int N)
+__global__ void vector_add(const float *A, const float *B, float *C, int N)
 {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i < N)
