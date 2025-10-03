@@ -6,6 +6,9 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --output saxpy.output
 
+# Change to the directory where the script was submitted
+cd $SLURM_SUBMIT_DIR
+
 module load nvidia/cuda
 nvcc saxpy.cu -o saxpy
 ./saxpy
