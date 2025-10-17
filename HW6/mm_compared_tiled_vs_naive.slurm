@@ -8,5 +8,5 @@
 
 cd $SLURM_SUBMIT_DIR
 module load nvidia/cuda
-nvcc mm_compare_tiled_vs_naive.cuo mm_compare_tiled_vs_naive
+nvcc mm_compare_tiled_vs_naive.cu -o mm_compare_tiled_vs_naive
 ./mm_compare_tiled_vs_naive
