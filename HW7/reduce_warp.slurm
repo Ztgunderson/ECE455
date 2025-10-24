@@ -9,4 +9,4 @@
 cd $SLURM_SUBMIT_DIR
 module load nvidia/cuda
 nvcc reduce_warp.cu -o reduce_warp
-./ reduce_warp
+./reduce_warp
